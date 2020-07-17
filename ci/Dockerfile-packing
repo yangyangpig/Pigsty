@@ -1,0 +1,18 @@
+FROM nginx:latest
+
+WORKDIR /app
+
+COPY package*.json ./
+COPY . /app
+
+
+# 复制node打包目录和nginx配置文件
+RUN mkdir -p /var/www/html && \
+cp -r dist/* /var/www/html/ && \
+cp ci/nginx-conf/nginx.conf /etc/nginx/conf.d/
+
+EXPOSE 8081
+
+# 启动
+CMD  ["nginx", "-g", "daemon off;"]
+
