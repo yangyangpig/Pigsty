@@ -6,7 +6,7 @@ import App from './App.vue'
 import Element from 'element-ui'
 // import './styles/element-variables.scss' // 引入项目公共的css3文件
 
-// import store from './store'
+import store from './store'
 import router from './router'
 
 // import './icons' // icon引入
@@ -37,6 +37,6 @@ Vue.config.productionTip = false
 new Vue({
   el: '#app', // 根模版
   router,
-  // store,
+  store,
   render: h => h(App)
 })

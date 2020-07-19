@@ -20,6 +20,12 @@ export const constanRoutes = [
     hidden: true
   },
   {
+    path: '/home/:userId',
+    name: 'home',
+    component: () => import('@/views/home/home.vue'),
+    hidden: true
+  },
+  {
     path: '/404',
     component: () => import('@/views/error-page/404'),
     hidden: true
