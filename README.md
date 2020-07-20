@@ -1,24 +1,25 @@
-# mall
+# pigsty的cmdb后台框架开发计划
 
-## Project setup
+基础组件开发
 ```
-npm install
-```
+1. router路由器构建
+2. store公共存储器
+3. api的基础模型构建
 
-### Compiles and hot-reloads for development
-```
-npm run serve
 ```
 
-### Compiles and minifies for production
+### 模块开发
 ```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
+1. 登录页面模块
+2. 布局模块组件
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### 一个一个页面扣
+
+```
+TODO 
+```
+
+### ci容器化部署
+```
+```
