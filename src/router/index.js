@@ -15,6 +15,17 @@ export const constanRoutes = [
     redirect: '/login'
   },
   {
+    path: '/dashboard',
+    name: 'Dashboard',
+    component: () => import('@/views/dashboard/index.vue'),
+    hidden: true,
+  },
+  {
+    path: '/login-v2',
+    component: () => import('@/views/login-v2/index.vue'), // 懒加载
+    hidden: true
+  },
+  {
     path: '/login',
     component: () => import('@/views/login/index.vue'), // 懒加载
     hidden: true
@@ -26,8 +37,14 @@ export const constanRoutes = [
     hidden: true
   },
   {
+    path: '/table',
+    component: () => import('@/views/table/table.vue'),
+    hidden: true
+  },
+
+  {
     path: '/404',
-    component: () => import('@/views/error-page/404'),
+    component:() => import('@/views/error-page/404'),
     hidden: true
   }
   
@@ -53,7 +70,6 @@ const createRouter = () => new Router({
   scrollBehavior: () => ({ y: 0 }), // 新页面滚到最顶
   routes: constanRoutes
 })
-
 const router = createRouter()
 
 export default router

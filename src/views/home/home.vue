@@ -1,8 +1,9 @@
 <template>
   <div>
     <h1> Welcom to  HomePage</h1>
-    <button v-on:click="storeValue()"> Store value</button>
-    <button v-on:click='showStoreValue()'> Show store value </button>
+    <!-- <button v-on:click="storeValue()"> Store value</button>
+    <button v-on:click='showStoreValue()'> Show store value </button> -->
+    <button v-on:click='jumpOther()'>jump table page</button>
   </div>
 </template>>
 
@@ -46,6 +47,10 @@ export default {
       // 通过属性访问
       console.log(this.$store.getters.count)
       
+    },
+    jumpOther() {
+      console.log("here is jump other")
+      this.$router.push({path: '/table'})
     }
   }
 }

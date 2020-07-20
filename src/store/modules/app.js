@@ -6,7 +6,7 @@ const state = {
 // 要唤醒一个mutation回调函数handler，需要以相应的type调用store.commit()方法 例如 store.mimit(''SET_TOKEN')， commit可以接受一个对象
 // {type:'SET_TOKEN', amount: 10},此时payload是一个对象，通过payload.amout访问到amout
 const mutations = {
-  INCREA_COUNT (state, num) {
+  INCREA_COUNT(state, num) {
     state.count += num.amount
   },
 }

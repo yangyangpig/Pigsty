@@ -4,7 +4,11 @@ import App from './App.vue'
 // import 'normalize.css/normalize.css'  // 引入一个很小的css文件
 
 import Element from 'element-ui'
-// import './styles/element-variables.scss' // 引入项目公共的css3文件
+import 'element-ui/lib/theme-chalk/index.css' // 这是element-ui官方的样式，先用着吧，功能还可以
+import './styles/element-variables.scss' // 引入项目公共的css3文件
+import 'normalize.css/normalize.css' // a modern alternative to CSS resets
+
+import '@/styles/index.scss' // global css
 
 import store from './store'
 import router from './router'
