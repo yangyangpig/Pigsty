@@ -15,6 +15,7 @@ export const constanRoutes = [
     redirect: '/login'
   },
   {
+    // 带有侧边栏的路由器,引入了Layout布局组件
     path: '/dashboard',
     name: 'Dashboard',
     component: () => import('@/views/dashboard/index.vue'),
